@@ -1,0 +1,28 @@
+/**
+ * This is the impl WHERE class for entity "TestEntity" */
+public final class TestEntity_Where extends com.doanduyhai.annotation_processing_demo.dsl.AbstractWhere {
+  public TestEntity_Where(java.lang.StringBuilder query) {
+    super(query);
+  }
+
+  /**
+   * WHERE ... id = ? */
+  public final com.doanduyhai.generated.TestEntity_Where id_Eq(final java.lang.Long input) {
+    whereConditions.add("id" + input.toString());
+    return this;
+  }
+
+  /**
+   * WHERE ... name = ? */
+  public final com.doanduyhai.generated.TestEntity_Where name_Eq(final java.lang.String input) {
+    whereConditions.add("name" + input.toString());
+    return this;
+  }
+
+  /**
+   * WHERE ... uuid = ? */
+  public final com.doanduyhai.generated.TestEntity_Where uuid_Eq(final java.util.UUID input) {
+    whereConditions.add("uuid" + input.toString());
+    return this;
+  }
+}
